@@ -1,0 +1,20 @@
+<%- include("partials/header") %>
+<h1> Ejs is a Template Engine </h1>
+
+<h1 style="color: purple;"> Hi <%= firstName %> - <%= lastName %> </h1>
+
+<!-- if else Statement  -->
+<% if (login) { %>
+<h2> Welocome User </h2>
+<% } else { %>
+<h2> Please Login </h2>
+<% } %>
+
+
+<!-- for in loop  -->
+<% for (const key in stu) { %>
+<%= key %> - <%= stu[key] %>
+<br>
+<% } %>
+
+<%- include("partials/footer") %>
